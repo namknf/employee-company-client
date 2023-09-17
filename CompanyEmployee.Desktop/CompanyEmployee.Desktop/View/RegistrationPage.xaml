@@ -20,8 +20,8 @@
             <TextBox Name="UsernameTextBox" Padding="0,10" Margin="200,0"></TextBox>
             <TextBlock Padding="0,10" Margin="200,0" Text="Пароль"></TextBlock>
             <PasswordBox Name="PasswordTextBox" Padding="0,10" Margin="200,0"></PasswordBox>
-            <TextBlock Name="EmailTextBox" Padding="0,10" Margin="200,0" Text="Почта"></TextBlock>
-            <TextBox Padding="0,10" Margin="200,0"></TextBox>
+            <TextBlock Padding="0,10" Margin="200,0" Text="Почта"></TextBlock>
+            <TextBox Name="EmailTextBox" Padding="0,10" Margin="200,0"></TextBox>
             <TextBlock Padding="0,10" Margin="200,0" Text="Номер телефона"></TextBlock>
             <TextBox Name="PhoneNumberTextBox" Padding="0,10" Margin="200,0"></TextBox>
             <TextBlock Padding="0,10" Margin="200,0" Text="Роль"></TextBlock>

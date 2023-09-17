@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Repository;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CompanyEmployee.Desktop.View
 {
@@ -25,9 +14,17 @@ namespace CompanyEmployee.Desktop.View
             InitializeComponent();
         }
 
-        private void AuthorizeButton_Click(object sender, RoutedEventArgs e)
+        private async void AuthorizeButton_Click(object sender, RoutedEventArgs e)
         {
-
+            var result = await AuthenticationRepository.AuthorizeAsync(PasswordTextBox.Password, UsernameTextBox.Text);
+            if (result != null && result.Token != null)
+            {
+                Properties.Settings.Default.AccessToken = result.Token;
+                Properties.Settings.Default.Save();
+                Manager.MainFrame.Navigate(new CompanyPage());
+            }
+            else
+                MessageBox.Show("Не удалось авторизоваться. Проверьте правильность введенных данных");
         }
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
