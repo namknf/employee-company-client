@@ -5,10 +5,21 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CompanyEmployee.Desktop.View"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="CompanyPage">
+      d:DesignHeight="660" d:DesignWidth="800"
+      Title="CompanyPage"
+      Background="White">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Button Name="GoBackButton" Click="GoBackButton_Click" Content="Выход"></Button>
+            <Button Name="InitButton" Click="InitButton_Click" Content="Загрузить"></Button>
+        </StackPanel>
+        <StackPanel Margin="0,60" Grid.Row="1">
+            <DataGrid Name="CompanyGrid"></DataGrid>
+        </StackPanel>
     </Grid>
 </Page>

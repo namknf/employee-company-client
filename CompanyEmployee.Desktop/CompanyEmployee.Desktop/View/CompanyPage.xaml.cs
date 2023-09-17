@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using Repository;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CompanyEmployee.Desktop.View
 {
@@ -23,6 +11,17 @@ namespace CompanyEmployee.Desktop.View
         public CompanyPage()
         {
             InitializeComponent();
+        }
+
+        private void GoBackButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new AuthorizationPage());
+        }
+
+        private async void InitButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            var companies = await CompanyRepository.GetCompanies(Properties.Settings.Default.AccessToken);
+            CompanyGrid.ItemsSource = companies;
         }
     }
 }

@@ -12,7 +12,10 @@ namespace CompanyEmployee.Desktop
         {
             InitializeComponent();
             Manager.MainFrame = MainWinFrame;
-            MainWinFrame.Navigate(new AuthorizationPage());
+            if (string.IsNullOrEmpty(Properties.Settings.Default.AccessToken))
+                MainWinFrame.Navigate(new AuthorizationPage());
+            else
+                MainWinFrame.Navigate(new CompanyPage());
         }
     }
 }
