@@ -11,20 +11,20 @@
 
     <Grid>
         <StackPanel VerticalAlignment="Center">
-            <TextBlock Text="Регистрация" HorizontalAlignment="Center" Margin="0,0,0,10" FontSize="20"></TextBlock>
-            <TextBlock Padding="0,10" Margin="200,0" Text="Имя"></TextBlock>
+            <TextBlock Text="Registration" HorizontalAlignment="Center" Margin="0,0,0,10" FontSize="20"></TextBlock>
+            <TextBlock Padding="0,10" Margin="200,0" Text="Name"></TextBlock>
             <TextBox Name="FirstNameTextBox" Padding="0,10" Margin="200,0"></TextBox>
-            <TextBlock Padding="0,10" Margin="200,0" Text="Фамилия"></TextBlock>
+            <TextBlock Padding="0,10" Margin="200,0" Text="Middle name"></TextBlock>
             <TextBox Name="SecondNameTextBox" Padding="0,10" Margin="200,0"></TextBox>
-            <TextBlock Padding="0,10" Margin="200,0" Text="Логин"></TextBlock>
+            <TextBlock Padding="0,10" Margin="200,0" Text="Login"></TextBlock>
             <TextBox Name="UsernameTextBox" Padding="0,10" Margin="200,0"></TextBox>
-            <TextBlock Padding="0,10" Margin="200,0" Text="Пароль"></TextBlock>
+            <TextBlock Padding="0,10" Margin="200,0" Text="Password"></TextBlock>
             <PasswordBox Name="PasswordTextBox" Padding="0,10" Margin="200,0"></PasswordBox>
-            <TextBlock Padding="0,10" Margin="200,0" Text="Почта"></TextBlock>
+            <TextBlock Padding="0,10" Margin="200,0" Text="Email"></TextBlock>
             <TextBox Name="EmailTextBox" Padding="0,10" Margin="200,0"></TextBox>
-            <TextBlock Padding="0,10" Margin="200,0" Text="Номер телефона"></TextBlock>
+            <TextBlock Padding="0,10" Margin="200,0" Text="Phone number"></TextBlock>
             <TextBox Name="PhoneNumberTextBox" Padding="0,10" Margin="200,0"></TextBox>
-            <TextBlock Padding="0,10" Margin="200,0" Text="Роль"></TextBlock>
+            <TextBlock Padding="0,10" Margin="200,0" Text="Role"></TextBlock>
             <ComboBox Name="RoleComboBox" Padding="0,10" Margin="200,0"></ComboBox>
             <StackPanel Margin="0,20,0,0">
                 <Button Content="Регистрироваться" Name="RegistrationButton" Padding="0,10" Margin="200,0" Click="RegistrationButton_Click"></Button>

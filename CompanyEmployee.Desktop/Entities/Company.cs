@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace Entities
+﻿namespace Entities
 {
     public class Company
     {
@@ -8,7 +6,6 @@ namespace Entities
 
         public string Name { get; set; }
 
-        [ForeignKey(nameof(Address))]
         public short AddressId { get; set; }
 
         public Address Address { get; set; }

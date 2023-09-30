@@ -11,14 +11,14 @@
 
     <Grid>
         <StackPanel VerticalAlignment="Center">
-            <TextBlock Text="Авторизация" HorizontalAlignment="Center" Margin="0,0,0,10" FontSize="20"></TextBlock>
-            <TextBlock Padding="0,10" Margin="200,0" Text="Логин"></TextBlock>
+            <TextBlock Text="Authorization" HorizontalAlignment="Center" Margin="0,0,0,10" FontSize="20"></TextBlock>
+            <TextBlock Padding="0,10" Margin="200,0" Text="Login"></TextBlock>
             <TextBox Name="UsernameTextBox" Padding="0,10" Margin="200,0"></TextBox>
-            <TextBlock Padding="0,10" Margin="200,0" Text="Пароль"></TextBlock>
+            <TextBlock Padding="0,10" Margin="200,0" Text="Password"></TextBlock>
             <PasswordBox Name="PasswordTextBox" Padding="0,10" Margin="200,0"></PasswordBox>
             <StackPanel Margin="0,20,0,0">
-                <Button Content="Войти" Name="AuthorizeButton" Padding="0,10" Margin="200,0" Click="AuthorizeButton_Click"></Button>
-                <Button Content="Зарегистрироваться" Name="RegisterButton" Padding="0,10" Margin="200,0" Click="RegisterButton_Click"></Button>
+                <Button Content="LogIn" Name="AuthorizeButton" Padding="0,10" Margin="200,0" Click="AuthorizeButton_Click"></Button>
+                <Button Content="Register" Name="RegisterButton" Padding="0,10" Margin="200,0" Click="RegisterButton_Click"></Button>
             </StackPanel>
         </StackPanel>
     </Grid>
